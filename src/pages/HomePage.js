@@ -9,6 +9,7 @@ function HomePage() {
             <Link to="/progress">Progress Bar</Link><br />
             <Link to="/scrollprogress">Scroll Progress Bar</Link><br />
             <Link to="/sidenav">Side NavBar</Link><br />
+            <Link to="/topnav">Top NavBar</Link><br />
         </div>
     )
 }
