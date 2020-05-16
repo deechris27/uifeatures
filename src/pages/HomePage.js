@@ -8,6 +8,7 @@ function HomePage() {
             <Link to="/spin">Spinner/Loader</Link><br />
             <Link to="/progress">Progress Bar</Link><br />
             <Link to="/scrollprogress">Scroll Progress Bar</Link><br />
+            <Link to="/sidenav">Side NavBar</Link><br />
         </div>
     )
 }

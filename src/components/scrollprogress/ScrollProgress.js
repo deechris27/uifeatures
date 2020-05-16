@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import './scrollprogress.css';
 
 function ScrollProgress() {
@@ -8,8 +7,6 @@ function ScrollProgress() {
     useEffect(() => {
         window.addEventListener('scroll', scrollFunc)
     })
-
-    // window.onscroll = function () { this.console.log("hellooo") };
 
     function scrollFunc() {
         let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
