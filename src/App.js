@@ -6,6 +6,7 @@ import ProgressBar from './components/progress/progress';
 import ScrollProgress from './components/scrollprogress/ScrollProgress';
 import SideBar from './components/sidebar/SideBar';
 import TopNav from './components/topnav/topnav';
+import FullNavigation from './components/fullscreen/FullNavigation';
 
 const App = ()=> (
    <Switch>
@@ -15,6 +16,7 @@ const App = ()=> (
      <Route path="/scrollprogress" component={ScrollProgress} />
      <Route path="/sidenav" component={SideBar} />
      <Route path="/topnav" component={TopNav} />
+     <Route path="/fullnav" component={FullNavigation} />
    </Switch>  
 );
 

@@ -10,6 +10,7 @@ function HomePage() {
             <Link to="/scrollprogress">Scroll Progress Bar</Link><br />
             <Link to="/sidenav">Side NavBar</Link><br />
             <Link to="/topnav">Top NavBar</Link><br />
+            <Link to="/fullnav">Full Screen Navigation</Link><br />
         </div>
     )
 }
