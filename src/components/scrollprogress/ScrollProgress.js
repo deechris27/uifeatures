@@ -12,7 +12,8 @@ function ScrollProgress() {
         let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         let scrolled = (winScroll / height) * 100;
-        progressBar.current.style.width = scrolled + "%";
+        let myStyle = progressBar.current.style;
+        myStyle.width = scrolled + "%";
     }
 
     return (
