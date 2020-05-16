@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Switch, Route} from 'react-router-dom';
+import Spin from './components/spin/spin';
+import HomePage from './pages/HomePage';
+import ProgressBar from './components/progress/progress';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = ()=> (
+   <Switch>
+     <Route exact path="/" component={HomePage} />
+     <Route path="/spin" component={Spin} />
+     <Route path="/progress" component={ProgressBar} />
+   </Switch>  
+);
 
 export default App;
