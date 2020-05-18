@@ -1,0 +1,9 @@
+.checked {
+    color: orange;
+}
+
+.rating{
+    position: relative;
+    left: 50%;
+    top: 300px;
+}

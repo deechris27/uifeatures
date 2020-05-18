@@ -13,6 +13,14 @@ import PromptModal from './components/promptmodal/PromptModal';
 import VideoPlayer from './components/videoplayer/VideoPlayer';
 import TimeLine from './components/timeline/TimeLine';
 import RangeSlider from './components/range/RangeSlider';
+import Tooltip from './components/tooltip/Tooltip';
+import HiddenElement from './components/hiddenelement/HiddenElement';
+import Rating from './components/rating/Rating';
+import Layout from './components/layout/Layout';
+import Website from './components/website/Website';
+import Typewriter from './components/typewriter/Typewriter';
+import LikeDislike from './components/likedislike/LikeDislike';
+import Overlay from './components/overlay/Overlay';
 
 const App = ()=> (
    <Switch>
@@ -29,6 +37,14 @@ const App = ()=> (
      <Route path="/video" component={VideoPlayer} />
      <Route path="/timeline" component={TimeLine} />
      <Route path="/range" component={RangeSlider} />
+     <Route path="/tool" component={Tooltip} />
+     <Route path="/hidden" component={HiddenElement} />
+     <Route path="/rating" component={Rating} />
+     <Route path="/layout" component={Layout} />
+     <Route path="/website" component={Website} />
+     <Route path="/typewriter" component={Typewriter} />
+     <Route path="/like" component={LikeDislike} />
+     <Route path="/overlay" component={Overlay} />
    </Switch>  
 );
 

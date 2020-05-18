@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function HomePage() {
     return (
-        <div style={{textAlign: 'center'}}>
+        <div style={{textAlign: 'center', lineHeight:'1.9'}}>
             <h1>Hello Home Page</h1>
             <Link to="/spin">Spinner/Loader</Link><br />
             <Link to="/progress">Progress Bar</Link><br />
@@ -17,6 +17,14 @@ function HomePage() {
             <Link to="/video">Video Player</Link><br />
             <Link to="/timeline">Posts/Comments Time Line</Link><br />
             <Link to="/range">Range Slider</Link><br />
+            <Link to="/tool">Tool Tip</Link><br />
+            <Link to="/hidden">Hidden Element</Link><br />
+            <Link to="/rating">Rating</Link><br />
+            <Link to="/layout">Simple Layout</Link><br />
+            <Link to="/website">Simple website Layout</Link><br />
+            <Link to="/typewriter">Typewriter Effect</Link><br />
+            <Link to="/like">Like Dislike</Link><br />
+            <Link to="/overlay">Overlay</Link><br />
         </div>
     )
 }

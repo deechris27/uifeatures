@@ -9,7 +9,7 @@ function Modal() {
 
     useEffect(() => {
         window.addEventListener('click', function (event) {
-            if (event.target == modal) {
+            if (event.target === modal) {
                 modal.current.style.display = "none";
             }
         });
