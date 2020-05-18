@@ -11,6 +11,12 @@ function HomePage() {
             <Link to="/sidenav">Side NavBar</Link><br />
             <Link to="/topnav">Top NavBar</Link><br />
             <Link to="/fullnav">Full Screen Navigation</Link><br />
+            <Link to="/skillprogress">Skill Progress</Link><br />
+            <Link to="/modal">Modal</Link><br />
+            <Link to="/promptmodal">Prompt Modal</Link><br />
+            <Link to="/video">Video Player</Link><br />
+            <Link to="/timeline">Posts/Comments Time Line</Link><br />
+            <Link to="/range">Range Slider</Link><br />
         </div>
     )
 }
