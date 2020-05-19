@@ -20,7 +20,7 @@ function PromptModal() {
             <div ref={modal} className="modal">
                 <span onClick={hide} className="close" title="Close Modal">×</span>
                 <form className="modal-content" action="">
-                    <div className="container">
+                    <div className="container1">
                         <h1>Mytidbit</h1>
                         <p>Are you sure you want to do something?</p>
 
