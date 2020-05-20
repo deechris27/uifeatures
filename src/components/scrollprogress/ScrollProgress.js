@@ -18,7 +18,7 @@ function ScrollProgress() {
 
     return (
         <React.Fragment>
-            <div className="header">
+            <div className="header1">
                 <h2>Scroll Progress</h2>
                 <div className="progress-container">
                     <div className="progress-bar" ref={progressBar}></div>
