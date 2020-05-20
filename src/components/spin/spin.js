@@ -25,7 +25,7 @@ function Spin() {
         <React.Fragment>
             <div className="loader" ref={loaderStyle} />
 
-            <div style={{ display: 'none' }} className="content" ref={contentStyle}>
+            <div style={{ display: 'none' }} className="content1" ref={contentStyle}>
                 <h2>Hello Deeeee!!!!!!!</h2>
                 <p>Refresh.....What comes around goes around.........</p>
             </div>
