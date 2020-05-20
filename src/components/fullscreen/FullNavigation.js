@@ -16,7 +16,7 @@ function FullNavigation() {
 
     return (
         <React.Fragment>
-            <div ref={content} className="overlay">
+            <div ref={content} className="overlay1">
                 <a href="javascript:void(0)" className="closebtn" onClick={() => closeNav()}>&times;</a>
                 <div className="overlay-content">
                     <Link to="/"><i className="fa fa-fw fa-home"></i> Home</Link>

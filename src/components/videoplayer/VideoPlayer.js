@@ -20,7 +20,7 @@ function VideoPlayer() {
     return (
         <React.Fragment>
              <video autoPlay muted controls loop ref={video} className="player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4"/>
-                <div className="content">
+                <div className="content2">
                     <h1>Mytidbit</h1>
                     <button className="butn" ref={button} onClick={toggle}>Pause</button>
                 </div>

@@ -25,7 +25,7 @@ function Modal() {
 
     return (
         <React.Fragment>
-            <button ref={button} onClick={showModal} style={{ backgroundColor: 'lightgreen', position: 'relative', left: '50%', top: '250px', marginTop: '20px' }}>Open Modal</button>
+            <button ref={button} onClick={showModal} style={{ backgroundColor: 'lightgreen', position: 'relative', left: '20%', top: '250px', marginTop: '20px' }}>Open Modal</button>
 
             <div ref={modal} className="modal">
 
