@@ -25,6 +25,8 @@ function HomePage() {
             <Link to="/typewriter">Typewriter Effect</Link><br />
             <Link to="/like">Like Dislike</Link><br />
             <Link to="/overlay">Overlay</Link><br />
+            <Link to="/drag">Drag Drop</Link><br />
+            <Link to="/validate">Form Validation</Link><br />
         </div>
     )
 }

@@ -21,6 +21,8 @@ import Website from './components/website/Website';
 import Typewriter from './components/typewriter/Typewriter';
 import LikeDislike from './components/likedislike/LikeDislike';
 import Overlay from './components/overlay/Overlay';
+import DragDrop from './components/draggable/DragDrop';
+import FormValidation from './components/formvalidation/FormValidation';
 
 const App = ()=> (
    <Switch>
@@ -45,7 +47,9 @@ const App = ()=> (
      <Route path="/typewriter" component={Typewriter} />
      <Route path="/like" component={LikeDislike} />
      <Route path="/overlay" component={Overlay} />
-   </Switch>  
+     <Route path="/drag" component={DragDrop} />
+     <Route path="/validation" component={FormValidation} />
+   </Switch>
 );
 
 export default App;
