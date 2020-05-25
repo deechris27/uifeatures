@@ -4,7 +4,6 @@ import './timeline.css';
 function TimeLine() {
     return (
         <React.Fragment>
-            <h2 className="container left">Needs Fix</h2>
             <div className="timeline">
                 <div className="container left">
                     <div className="content">
