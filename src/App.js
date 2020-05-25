@@ -23,6 +23,8 @@ import LikeDislike from './components/likedislike/LikeDislike';
 import Overlay from './components/overlay/Overlay';
 import DragDrop from './components/draggable/DragDrop';
 import FormValidation from './components/formvalidation/FormValidation';
+import CopyPaste from './components/copypaste/CopyPaste';
+import DetectCapsLock from './components/capslock/DetectCapsLock';
 
 const App = ()=> (
    <Switch>
@@ -49,6 +51,8 @@ const App = ()=> (
      <Route path="/overlay" component={Overlay} />
      <Route path="/drag" component={DragDrop} />
      <Route path="/validation" component={FormValidation} />
+     <Route path="/copy" component={CopyPaste} />
+     <Route path="/capslock" component={DetectCapsLock} />
    </Switch>
 );
 

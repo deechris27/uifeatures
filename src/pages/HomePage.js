@@ -27,6 +27,8 @@ function HomePage() {
             <Link to="/overlay">Overlay</Link><br />
             <Link to="/drag">Drag Drop</Link><br />
             <Link to="/validate">Form Validation</Link><br />
+            <Link to="/copy">Copy Paste</Link><br />
+            <Link to="/capslock">Caps Lock</Link><br />
         </div>
     )
 }
