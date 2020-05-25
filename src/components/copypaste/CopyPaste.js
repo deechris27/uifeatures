@@ -10,9 +10,9 @@ function CopyPaste() {
 
     return (
         <div style={{ position: "relative", left: "45%", top: "250px" }}>
-            <h3>Click copy and paste in the text area</h3>
+            <h3>Type something then copy and paste in the text area</h3>
 
-            <input type="text" value="Hello Dee......wassup" ref={toCopy} style={{marginBottom:"10px"}}/><br />
+            <input type="text" placeholder="Type something here..." ref={toCopy} style={{marginBottom:"10px"}}/><br />
             <textarea /><br />
             <button onClick={copyFunction} style={{width:"200px"}}>Copy</button>
 
