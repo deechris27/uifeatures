@@ -25,6 +25,7 @@ import DragDrop from './components/draggable/DragDrop';
 import FormValidation from './components/formvalidation/FormValidation';
 import CopyPaste from './components/copypaste/CopyPaste';
 import DetectCapsLock from './components/capslock/DetectCapsLock';
+import ShaktimaanSpin from './components/shaktimaan/ShaktimaanSpin';
 
 const App = ()=> (
    <Switch>
@@ -53,6 +54,7 @@ const App = ()=> (
      <Route path="/validation" component={FormValidation} />
      <Route path="/copy" component={CopyPaste} />
      <Route path="/capslock" component={DetectCapsLock} />
+     <Route path="/shakti" component={ShaktimaanSpin} />
    </Switch>
 );
 

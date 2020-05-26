@@ -29,6 +29,7 @@ function HomePage() {
             <Link to="/validate">Form Validation</Link><br />
             <Link to="/copy">Copy Paste</Link><br />
             <Link to="/capslock">Caps Lock</Link><br />
+            <Link to="/shakti">Shaktimaan Spinner</Link><br />
         </div>
     )
 }
