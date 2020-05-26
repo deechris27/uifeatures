@@ -13,7 +13,7 @@
   color: white; 
 }
 
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
+.html {width: 90%; background-color: green;}
+.css {width: 80%; background-color: blue;}
+.js {width: 65%; background-color: purple;}
+.php {width: 60%; background-color: yellowgreen;}
