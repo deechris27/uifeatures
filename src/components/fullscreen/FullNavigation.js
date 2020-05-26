@@ -27,8 +27,7 @@ function FullNavigation() {
             </div>
 
             <h2>Fullscreen Transparent Navigation</h2>
-            <p>Mytidbit</p>
-            <span style={{ fontSize: '30px', cursor: 'pointer' }} onClick={() => displayNav()}>&#9776; Click Me</span>
+            <span style={{ fontSize: '30px', cursor: 'pointer' }} onClick={() => displayNav()}>&#128682; Open the door!</span>
         </React.Fragment>
     )
 }
