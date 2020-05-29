@@ -28,6 +28,7 @@ import DetectCapsLock from './components/capslock/DetectCapsLock';
 import ShaktimaanSpin from './components/shaktimaan/ShaktimaanSpin';
 import ListFilter from './components/listfilter/ListFilter';
 import Download from './components/download/Download';
+import PopUpChat from './components/popupchat/PopUpChat';
 
 const App = ()=> (
    <Switch>
@@ -59,6 +60,7 @@ const App = ()=> (
      <Route path="/shakti" component={ShaktimaanSpin} />
      <Route path="/listfilter" component={ListFilter} />
      <Route path="/download" component={Download} />
+     <Route path="/popupchat" component={PopUpChat} />
    </Switch>
 );
 

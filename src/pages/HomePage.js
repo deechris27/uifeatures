@@ -32,6 +32,7 @@ function HomePage() {
             <Link to="/shakti">Shaktimaan Spinner</Link><br />
             <Link to="/listfilter">List Filter</Link><br />
             <Link to="/download">Download</Link><br />
+            <Link to="/popupchat">Pop Up Chat</Link><br />
         </div>
     )
 }
