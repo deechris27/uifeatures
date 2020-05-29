@@ -8,6 +8,9 @@ function ListFilter() {
     const names = [
         "Deepak",
         "Mytidbit",
+        "Deepika",
+        "Mytid",
+        "Suga",
         "Hello",
         "World",
         "Chris",
