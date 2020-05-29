@@ -31,6 +31,7 @@ function HomePage() {
             <Link to="/capslock">Caps Lock</Link><br />
             <Link to="/shakti">Shaktimaan Spinner</Link><br />
             <Link to="/listfilter">List Filter</Link><br />
+            <Link to="/download">Download</Link><br />
         </div>
     )
 }

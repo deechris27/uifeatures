@@ -27,6 +27,7 @@ import CopyPaste from './components/copypaste/CopyPaste';
 import DetectCapsLock from './components/capslock/DetectCapsLock';
 import ShaktimaanSpin from './components/shaktimaan/ShaktimaanSpin';
 import ListFilter from './components/listfilter/ListFilter';
+import Download from './components/download/Download';
 
 const App = ()=> (
    <Switch>
@@ -57,6 +58,7 @@ const App = ()=> (
      <Route path="/capslock" component={DetectCapsLock} />
      <Route path="/shakti" component={ShaktimaanSpin} />
      <Route path="/listfilter" component={ListFilter} />
+     <Route path="/download" component={Download} />
    </Switch>
 );
 
