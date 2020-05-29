@@ -30,6 +30,7 @@ function HomePage() {
             <Link to="/copy">Copy Paste</Link><br />
             <Link to="/capslock">Caps Lock</Link><br />
             <Link to="/shakti">Shaktimaan Spinner</Link><br />
+            <Link to="/listfilter">List Filter</Link><br />
         </div>
     )
 }
