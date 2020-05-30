@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useCallback} from 'react';
 import './dropdownfilter.css';
 
 function DropDownFilter() {
@@ -36,26 +36,20 @@ function DropDownFilter() {
         }
      }
 
-    const filterOptions = (e)=>{
+    const debounceKeyUp = useCallback(debounce((e) => {
+        e.persist();
         const optionsCopy = [...options];
         let filteredOptions = optionsCopy.filter(opt=>opt.toLowerCase().includes(e.target.value.toLowerCase()));
-        setOptions(filteredOptions);
-    };
+        setOptions(filteredOptions);   
+    }, 2000));
 
-    const debounceKeyUp = (e) => {
-        e.persist();
-        filterOptions(e);    
-    };
-
-    const throttleKeyUp = (e)=>{
+    const throttleKeyUp = useCallback(throttle((e)=>{
          e.persist();
-         filterOptions(e);
-    };
+         const optionsCopy = [...options];
+         let filteredOptions = optionsCopy.filter(opt=>opt.toLowerCase().includes(e.target.value.toLowerCase()));
+         setOptions(filteredOptions);  
+    },2000));
 
-    useEffect(()=>{
-       debounce(debounceKeyUp, 2000);
-       throttle(throttleKeyUp, 2000);
-    },[]);
 
     const displayFilter = () => {
          setShow(!show);
