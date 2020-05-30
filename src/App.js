@@ -29,6 +29,7 @@ import ShaktimaanSpin from './components/shaktimaan/ShaktimaanSpin';
 import ListFilter from './components/listfilter/ListFilter';
 import Download from './components/download/Download';
 import PopUpChat from './components/popupchat/PopUpChat';
+import DropDownFilter from './components/dropdownFilter/DropDownFilter';
 
 const App = ()=> (
    <Switch>
@@ -61,6 +62,7 @@ const App = ()=> (
      <Route path="/listfilter" component={ListFilter} />
      <Route path="/download" component={Download} />
      <Route path="/popupchat" component={PopUpChat} />
+     <Route path="/dropdownfilter" component={DropDownFilter} />
    </Switch>
 );
 
