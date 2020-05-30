@@ -55,7 +55,7 @@ const App = ()=> (
      <Route path="/like" component={LikeDislike} />
      <Route path="/overlay" component={Overlay} />
      <Route path="/drag" component={DragDrop} />
-     <Route path="/validation" component={FormValidation} />
+     <Route path="/validate" component={FormValidation} />
      <Route path="/copy" component={CopyPaste} />
      <Route path="/capslock" component={DetectCapsLock} />
      <Route path="/shakti" component={ShaktimaanSpin} />
