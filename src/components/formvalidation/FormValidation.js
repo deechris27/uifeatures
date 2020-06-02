@@ -25,14 +25,14 @@ function FormValidation() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if(isformValid(state.errors)){
+        if(state.userName && state.password && isformValid(state.errors)){
             setSuccessMessage("Validation Successfull");
             timerId = setTimeout(()=>{
                 window.location.replace("http://www.tidbit.c.la/")
             },1000);
             
         }else{
-            setErrorMessage(`Form Invalid: ${state.errors.uname} ${state.errors.pwd} ${state.errors.email}`)
+            setErrorMessage(`Form Invalid - please fill all the fields: ${state.errors.uname} ${state.errors.pwd} ${state.errors.email}`)
         }
     };
 
@@ -52,7 +52,7 @@ function FormValidation() {
 
         switch(name){
             case 'username':
-                errors.uname = value.length < 3 && value.length > 0 ? 'Username requires minimum 3 characters --' : "";
+                errors.uname = value.length < 3 && value.length > 0 ? 'Username requires minimum 3 characters -' : "";
                 break;
             case 'password':
                 if(value.length < 8 && value.length > 0){
@@ -66,7 +66,7 @@ function FormValidation() {
                 }
                 break;
             case 'email':
-                  errors.email = value.length > 0 && emailRegex.test(value) ? "" : "Invalid email address ";
+                  errors.email = value.length > 0 && emailRegex.test(value) ? "" : "Invalid email address -";
                 break;
             default:
                 break;
