@@ -34,6 +34,7 @@ function HomePage() {
             <Link to="/download">Download</Link><br />
             <Link to="/popupchat">Pop Up Chat</Link><br />
             <Link to="/dropdownfilter">Drop Down List Filter</Link><br />
+            <Link to="/paginate">Pagination</Link><br />
         </div>
     )
 }
