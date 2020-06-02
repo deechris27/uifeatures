@@ -13,7 +13,7 @@ function Pagination() {
         let timerID;
         const fetchPosts = async ()=>{
             setLoading(true);
-            timerID = setTimeout(()=>{
+            
                 fetch('https://jsonplaceholder.typicode.com/posts')
                 .then(res=>res.json())
                 .then(json=>{
@@ -21,16 +21,13 @@ function Pagination() {
                     setPosts(json)
                     setLoading(false);
                 })
-                
-            }, 10);
-            
         };
 
         fetchPosts();
 
-        return function(){
-            clearTimeout(timerID)
-        }
+        // return function(){
+        //     clearTimeout(timerID)
+        // }
     }, []);
 
     const indexOfLastPost = currentPage * postsPerPage;
