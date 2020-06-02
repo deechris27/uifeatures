@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 function HomePage() {
     return (
         <div style={{textAlign: 'center', lineHeight:'1.9'}}>
-            <h1>Hello Home Page</h1>
+            <h1>Mytidbit Home Page</h1>
             <Link to="/spin">Spinner/Loader</Link><br />
             <Link to="/progress">Progress Bar</Link><br />
             <Link to="/scrollprogress">Scroll Progress Bar</Link><br />

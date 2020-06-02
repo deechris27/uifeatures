@@ -1,9 +1,13 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState, useCallback, useRef} from 'react';
 import './dropdownfilter.css';
 
 function DropDownFilter() {
 
     const [options, setOptions] = useState(['Mytidbit', 'Deepak', 'Wassup', 'Deeps', 'Maolins', 'Test']);
+
+    const [baseOptions, setBaseOptions] = useState(options);
+
+    const filterInput = useRef();
 
     const [show, setShow] = useState(false);
 
@@ -36,6 +40,10 @@ function DropDownFilter() {
         }
      }
 
+     const handleReset = _=> {
+         setOptions(baseOptions)
+     };
+
     const debounceKeyUp = useCallback(debounce((e) => {
         e.persist();
         const optionsCopy = [...options];
@@ -48,8 +56,16 @@ function DropDownFilter() {
          const optionsCopy = [...options];
          let filteredOptions = optionsCopy.filter(opt=>opt.toLowerCase().includes(e.target.value.toLowerCase()));
          setOptions(filteredOptions);  
-    },2000));
+    }, 2000));
 
+    const handleKeyPress = e => {
+        e.persist();
+        if(deBounce){
+            (e.keyCode===8 || e.keyCode===46) && filterInput.current.value === "" ? handleReset() : debounceKeyUp(e)
+        }else{
+            (e.keyCode===8 || e.keyCode===46) && filterInput.current.value === "" ? handleReset() : throttleKeyUp(e)
+        }
+    };
 
     const displayFilter = () => {
          setShow(!show);
@@ -64,7 +80,7 @@ function DropDownFilter() {
             <button className="dropbtn" onClick={toggleFilter}>Change Filter Type</button><br/>
             <button onClick={displayFilter} className="dropbtn">{deBounce ? "DeBounce" : "Throttle"} <i className="arroww downn"></i></button>
             <div className={`dropdown-content ${show ? "show" : "hide"}`}>
-                <input type="text" placeholder={deBounce ? "Try Debounce..." : "Try Throttle..."} className="filter-input" onKeyUp={deBounce ? e => {e.persist(); debounceKeyUp(e)} : e => {e.persist(); throttleKeyUp(e)}} />
+                <input type="text" ref={filterInput} placeholder={deBounce ? "Try Debounce..." : "Try Throttle..."} className="filter-input" onKeyUp={handleKeyPress} />
                 <i className="fa fa-fw fa-search" style={{position: 'relative', bottom: '34px', left: '5px'}}></i>
                 {options.map((opt, i)=>(
                     <a key={i}>{opt}</a>
