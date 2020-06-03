@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
 function HomePage() {
+
+    useEffect(()=>{
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e)=>{
+            e.preventDefault();
+            deferredPrompt = e;
+            //showInstallPromotion();
+        })
+    }, []);
+
     return (
         <div style={{textAlign: 'center', lineHeight:'1.9'}}>
             <h1>Mytidbit Home Page</h1>
