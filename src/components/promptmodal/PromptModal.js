@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import './promptmodal.css';
 
-function PromptModal() {
+function PromptModal(props) {
 
     const modal = useRef();
 
@@ -17,7 +17,7 @@ function PromptModal() {
         <React.Fragment>
             <button onClick={show} style={{position: 'relative', left: '25%', top: '300px'}}>Show Modal</button>
 
-            <div ref={modal} className="modal">
+            <div ref={modal} className="modal" style={{display: `${props.display}`}}>
                 <span onClick={hide} className="close" title="Close Modal">×</span>
                 <form className="modal-content" action="">
                     <div className="container1">

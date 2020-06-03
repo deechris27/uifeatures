@@ -31,6 +31,7 @@ import Download from './components/download/Download';
 import PopUpChat from './components/popupchat/PopUpChat';
 import DropDownFilter from './components/dropdownFilter/DropDownFilter';
 import Pagination from './components/pagination/Pagination';
+import AutoComplete from './components/autocomplete/AutoComplete';
 
 const App = ()=> (
    <Switch>
@@ -65,6 +66,7 @@ const App = ()=> (
      <Route path="/popupchat" component={PopUpChat} />
      <Route path="/dropdownfilter" component={DropDownFilter} />
      <Route path="/paginate" component={Pagination} />
+     <Route path="/autocomplete" component={AutoComplete} />
    </Switch>
 );
 

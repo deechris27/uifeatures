@@ -35,6 +35,7 @@ function HomePage() {
             <Link to="/popupchat">Pop Up Chat</Link><br />
             <Link to="/dropdownfilter">Drop Down List Filter</Link><br />
             <Link to="/paginate">Pagination</Link><br />
+            <Link to="/autocomplete">Auto Complete</Link><br />
         </div>
     )
 }

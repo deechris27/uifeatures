@@ -1,0 +1,50 @@
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+  }
+  
+  .inputt-text {
+    border: 1px solid black;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .summit {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(3, 20, 18);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    border: 1px solid #d55ada;
+    border-bottom: none;
+    border-top: none;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 300px;
+  }
+  
+  .autocomplete-items-item{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(237, 231, 220);
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #d6b5b5; 
+  }
+  
+  .autocomplete-active {
+    background-color: purple !important; 
+    color: #ffffff; 
+  }
