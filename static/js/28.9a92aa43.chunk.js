@@ -1,0 +1,2 @@
+(this.webpackJsonpfeatures=this.webpackJsonpfeatures||[]).push([[28],{47:function(e,t,a){},77:function(e,t,a){"use strict";a.r(t);var n=a(0),o=a.n(n);a(47);t.default=function(){return o.a.createElement(o.a.Fragment,null,o.a.createElement("div",{className:"tooltip"},"Place cursor on me",o.a.createElement("span",{className:"tooltiptext"},"Hellooooo....")))}}}]);
+//# sourceMappingURL=28.9a92aa43.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpfeatures=this.webpackJsonpfeatures||[]).push([[34],{90:function(e,t,a){"use strict";a.r(t);var n=a(0),l=a.n(n);t.default=function(){return l.a.createElement("div",{style:{position:"absolute",left:"30%",top:"220px"}},l.a.createElement("h1",null,"Click on the image to download"),l.a.createElement("a",{href:"",download:"fire.jpg",style:{marginLeft:"60px"}},l.a.createElement("img",{src:"https://www.gstatic.com/webp/gallery/5.sm.jpg",alt:"mytidbit"})))}}}]);
+//# sourceMappingURL=34.4c43e3f3.chunk.js.map
