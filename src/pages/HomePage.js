@@ -36,6 +36,8 @@ function HomePage() {
             <Link to="/dropdownfilter">Drop Down List Filter</Link><br />
             <Link to="/paginate">Pagination</Link><br />
             <Link to="/autocomplete">Auto Complete</Link><br />
+            <Link to="/location">Location Finder</Link><br />
+            <Link to="/pdf">PDF Generator</Link>
         </div>
     )
 }

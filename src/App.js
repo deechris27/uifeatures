@@ -32,6 +32,8 @@ import PopUpChat from './components/popupchat/PopUpChat';
 import DropDownFilter from './components/dropdownFilter/DropDownFilter';
 import Pagination from './components/pagination/Pagination';
 import AutoComplete from './components/autocomplete/AutoComplete';
+import GeoLocation from './components/geolocation/GeoLocation';
+import PdfDownload from './components/pdfdownload/PdfDownload';
 
 const App = ()=> (
    <Switch>
@@ -67,6 +69,8 @@ const App = ()=> (
      <Route path="/dropdownfilter" component={DropDownFilter} />
      <Route path="/paginate" component={Pagination} />
      <Route path="/autocomplete" component={AutoComplete} />
+     <Route path="/location" component={GeoLocation} />
+     <Route path="/pdf" component={PdfDownload} />
    </Switch>
 );
 
