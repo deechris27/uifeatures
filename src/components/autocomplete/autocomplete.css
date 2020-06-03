@@ -10,9 +10,11 @@
     padding: 10px;
     font-size: 16px;
     width: 100%;
+    position: relative;
+    left: 50px;
   }
   
-  .summit {
+  .summit2 {
     border: 1px solid transparent;
     background-color: #f1f1f1;
     padding: 10px;
@@ -20,6 +22,10 @@
     background-color: rgb(3, 20, 18);
     color: rgb(255, 255, 255);
     cursor: pointer;
+    position: relative;
+    left: 100px;
+    margin: 5px;
+    width: 200px;
   }
   
   .autocomplete-items {
@@ -31,6 +37,8 @@
     left: 0;
     right: 0;
     width: 300px;
+    position: relative;
+    left: 50px;
   }
   
   .autocomplete-items-item{
@@ -38,6 +46,7 @@
     cursor: pointer;
     background-color: rgb(237, 231, 220);
     border-bottom: 1px solid #d4d4d4; 
+    position: relative;
   }
   
   .autocomplete-items div:hover {

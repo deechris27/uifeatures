@@ -60,10 +60,10 @@ function AutoComplete() {
 
     return (
         <div >
-            <h3>Mytidbit Autocomplete - Search for a country and select from suggestions</h3>
-            <p style={{color:'red'}}>{state.prompty ? "Select a country and then submit" : ""}</p>
+            <h3 style={{textAlign:'center'}}>Mytidbit Autocomplete - Search for a country and select from suggestions</h3>
+            <p style={{color:'red', position:'relative', left:'50px'}}>{state.prompty ? "Select a country and then submit" : ""}</p>
             <form autoComplete="off" action="">
-                <div className="autocomplete" style={{width:'300px'}}>
+                <div className="autocomplete">
                     <input
                      type="text"
                      className="inputt-text"
@@ -71,9 +71,9 @@ function AutoComplete() {
                      onKeyDown={handleKeyDown}
                      onChange={handleOnChange}
                      value={state.inputVal} />
-                </div>
+                </div><br />
                 {state.inputVal && suggestedList}
-                <input type="submit" className="summit" onClick={handleSubmit}/>
+                <input type="submit" className="summit2" onClick={handleSubmit}/>
             </form>
         </div>
     )
