@@ -33,8 +33,8 @@ function ProgressBar() {
                 <div className="bar" ref={pBar} />
             </div>
             <br />
-            <button onClick={()=>start()}>Start</button>{"\t"}
-            <button onClick={()=>clear()}>Clear</button>
+            <button className="prog-button" onClick={()=>start()}>Start</button>{"\t"}
+            <button className="prog-button" onClick={()=>clear()}>Clear</button>
         </React.Fragment>
     )
 }

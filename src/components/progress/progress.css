@@ -8,3 +8,9 @@
     height: 30px;
     background-color: blue;
 }
+
+.prog-button {
+   width: 100px;
+   color: black;
+   background-color: rgb(180, 204, 114);
+}

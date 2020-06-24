@@ -51,7 +51,7 @@
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid gray;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
   }
@@ -64,7 +64,7 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid gray;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
@@ -75,7 +75,7 @@
   
   .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: lightgray;
     position: relative;
     border-radius: 6px;
   }

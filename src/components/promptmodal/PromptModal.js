@@ -25,8 +25,8 @@ function PromptModal(props) {
                         <p>Are you sure you want to do something?</p>
 
                         <div className="clearfix">
-                            <button type="button" onClick={hide} className="cancelbtn">No</button>
-                            <button type="button" onClick={hide} className="deletebtn">Yes</button>
+                            <button onClick={hide} className="cancelbtn">No</button>
+                            <button onClick={hide} className="deletebtn">Yes</button>
                         </div>
                     </div>
                 </form>
