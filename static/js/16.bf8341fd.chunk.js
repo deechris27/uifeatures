@@ -1,0 +1,2 @@
+(this.webpackJsonpfeatures=this.webpackJsonpfeatures||[]).push([[16],{48:function(e,t,a){},78:function(e,t,a){"use strict";a.r(t);var n=a(0),r=a.n(n);a(48);t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement("div",{class:"trigger"},r.a.createElement("b",null,"Place the cursor on me.")),r.a.createElement("div",{class:"hidden"},"You get to see me when you hover over the text above."))}}}]);
+//# sourceMappingURL=16.bf8341fd.chunk.js.map
