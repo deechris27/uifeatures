@@ -29,7 +29,7 @@ function ListFilter() {
     return (
         <div>
             <input type="text" className="list-filter-input" onKeyUp={handleKeyUp} placeholder="Search names...." />
-             <span style={{position:"absolute", left: "0", marginLeft:"30px", marginTop:"-32px"}}><i className="fa fa-fw fa-search"></i></span>
+             <span style={{position:"absolute", left: "0", marginLeft:"13px", marginTop:"-34px"}}><i className="fa fa-fw fa-search"></i></span>
                 <ul className="list-filter-ul">
                     {filteredNames.map(name=>(
                         <li key={name}><a href="#">{name}</a></li>
