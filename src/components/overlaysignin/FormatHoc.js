@@ -29,7 +29,13 @@ const socialIcons = (
 );
 
 function FormatHoc(WrappedComponent) {
-    const formFields = WrappedComponent.name === "SigninBit" ? signInFields : signUpFields;
+    let formFields;
+    if(WrappedComponent.name==="SigninBit"){
+        formFields = signInFields;
+    }
+    if(WrappedComponent.name==="SignupBit"){
+        formFields = signUpFields;
+    }
     return function formTemplate(props) {
         return <WrappedComponent formFields={formFields} socialIcons={socialIcons} {...props} />
     }
