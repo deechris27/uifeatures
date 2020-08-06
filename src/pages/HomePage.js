@@ -47,7 +47,8 @@ function HomePage() {
             <Link to="/paginate">Pagination</Link><br />
             <Link to="/autocomplete">Auto Complete</Link><br />
             <Link to="/location">Location Finder</Link><br />
-            <Link to="/pdf">PDF Generator</Link>
+            <Link to="/pdf">PDF Generator</Link><br />
+            <Link to="/osigninup">OverLay SignIn SignUp</Link>
         </div>
     )
 }
