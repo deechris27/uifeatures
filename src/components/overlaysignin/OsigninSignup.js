@@ -15,8 +15,8 @@ function SignInSignup() {
 
     return (
         <React.Fragment>
-            <h2>Mytidbit overlay signin signup</h2>
-            <div className={`container ${containerClass ? containerClass : ""}`}>
+            <h2 className="titley">Mytidbit overlay signin signup</h2>
+            <div className={`main-container ${containerClass ? containerClass : ""}`}>
                 <SignupBit />
                 <SigninBit />
                 <OverLayBit handleSignInUp={handleSignInUp}/>
