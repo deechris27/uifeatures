@@ -60,22 +60,22 @@ button.ghost {
 	cursor: pointer;
 }
 
-.formey {
-	background-color: #FFFFFF;
+#formey {
+	background-color: #FFFFFF !important;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 50px;
+	padding: 0 50px !important;
 	height: 100%;
 	text-align: center;
 }
 
-.inputey {
-	background-color: #eee;
+#inputey {
+	background-color: #eee !important;
 	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
+	padding: 12px 15px !important;
+	margin: 8px 0 !important;
 	width: 100%;
 }
 

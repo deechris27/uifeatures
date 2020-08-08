@@ -4,7 +4,7 @@ import FormatHoc from './FormatHoc';
 function SignupBit({ formFields, socialIcons }) {
     return (
         <div className="form-container sign-up-container">
-            <form action="#" className="formey">
+            <form action="#" id="formey">
                 <h1 className="sub-title">Create Account</h1>
                 {socialIcons}
                 <span className="or-text">or use your email for registration</span>

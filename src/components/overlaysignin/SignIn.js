@@ -5,7 +5,7 @@ import FormatHoc from './FormatHoc';
 function SigninBit({ formFields, socialIcons }) {
     return (
         <div className="form-container sign-in-container">
-            <form action="#" className="formey">
+            <form action="#" id="formey">
                 <h1 className="sub-title">Sign in</h1>
                  {socialIcons}
                 <span className="or-text">or use your account</span>

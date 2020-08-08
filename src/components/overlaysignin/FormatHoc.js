@@ -3,18 +3,18 @@ import React from 'react';
 
 const signUpFields = (
     <div>
-        <input type="text" placeholder="Name" className="inputey"/>
-        <input type="email" placeholder="Email" className="inputey"/>
-        <input type="password" placeholder="Password" className="inputey"/>
-        <input type="password" placeholder="Confirm Password" className="inputey"/>
+        <input type="text" placeholder="Name" id="inputey"/>
+        <input type="email" placeholder="Email" id="inputey"/>
+        <input type="password" placeholder="Password" id="inputey"/>
+        <input type="password" placeholder="Confirm Password" id="inputey"/>
         <button className="buttoney">Sign Up</button>
     </div>
 );
 
 const signInFields = (
     <div>
-        <input type="email" placeholder="Email" className="inputey"/>
-        <input type="password" placeholder="Password" className="inputey"/>
+        <input type="email" placeholder="Email" id="inputey"/>
+        <input type="password" placeholder="Password" id="inputey"/>
         <a href="#" className="social">Forgot your password?</a>
         <button className="buttoney">Sign In</button>
     </div>
