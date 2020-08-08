@@ -9,9 +9,17 @@ function SignInSignup() {
     const [containerClass, setContainerClass] = useState("");
 
     const handleSignInUp = (e) => {
-        console.log(e.target.name)
-        return e.target.name === "signup" ? setContainerClass("right-panel-active") : setContainerClass("");
+   
+        if(e && e.target && e.target.name){
+           return  e.target.name === "signup" ? setContainerClass("right-panel-active") : setContainerClass("");
+        }else{
+            setContainerClass("")
+        }  
     };
+
+    useEffect(()=>{
+        handleSignInUp()
+    },[])
 
     return (
         <React.Fragment>
