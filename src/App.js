@@ -107,7 +107,6 @@ const App = ()=> (
      <Route path="/autocomplete" component={AutoComplete} />
      <Route path="/location" component={GeoLocation} />
      <Route path="/pdf" component={PdfDownload} />
-     <Route path="/osigninup" component={OverLayContainer} />
      </Switch>
    </Suspense >
    </React.Fragment>
