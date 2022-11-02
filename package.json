@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "gh-pages": "2.2.0",
     "html2canvas": "1.0.0-rc.5",
-    "jspdf": "1.5.3",
+    "jspdf": "2.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-joyride": "^2.2.1",
